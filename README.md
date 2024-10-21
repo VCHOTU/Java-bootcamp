@@ -1,3 +1,7 @@
+import java.util.InputMismatchException; import java.util.Scanner;
+
+public class ATM { private static double atmBalance = 100000; // Initial ATM balance private static double userBalance = 10000; // Initial user account balance
+
 public static void main(String[] args) {
     try (Scanner scanner = new Scanner(System.in)) {
         int choice;
