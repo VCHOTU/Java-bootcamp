@@ -6,9 +6,9 @@ import java.util.Scanner;
 
 public class ATM {
 
-    private static double atmBalance = 100000; // Initial ATM balance
+    private static double atmBalance = 1000000; // Initial ATM balance
 
-    private static double userBalance = 10000; // Initial user account balance
+    private static double userBalance = 100000; // Initial user account balance
 
 
 
@@ -138,9 +138,9 @@ public class ATM {
 
                     System.out.println("Please enter a valid amount greater than zero.");
 
-                } else if (amount > 50000) {
+                } else if (amount > 500000) {
 
-                    System.out.println("Maximum deposit amount is 50000.");
+                    System.out.println("Maximum deposit amount is 500000.");
 
                 } else {
 
