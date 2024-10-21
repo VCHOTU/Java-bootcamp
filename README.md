@@ -1,6 +1,6 @@
 import java.util.InputMismatchException; import java.util.Scanner;
 
-public class ATM { private static double atmBalance = 100000; // Initial ATM balance private static double userBalance = 10000; // Initial user account balance
+public class ATM { private static double atmBalance = 500000; // Initial ATM balance private static double userBalance = 50000; // Initial user account balance
 
 public static void main(String[] args) {
     try (Scanner scanner = new Scanner(System.in)) {
@@ -65,8 +65,8 @@ private static void depositMoney(Scanner scanner) {
 
             if (amount <= 0) {
                 System.out.println("Please enter a valid amount greater than zero.");
-            } else if (amount > 50000) {
-                System.out.println("Maximum deposit amount is 50000.");
+            } else if (amount > 100000) {
+                System.out.println("Maximum deposit amount is 100000.");
             } else {
                 // If all checks pass
                 userBalance += amount;
